@@ -5,7 +5,7 @@ import 'package:bear/for_menu_recipe_page.dart';
 import 'package:bear/party_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:launch_review/launch_review.dart';
+import 'package:in_app_review/in_app_review.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MenuPage extends StatefulWidget {
@@ -200,7 +200,10 @@ class _MenuPageState extends State<MenuPage> {
                     ),
                     GestureDetector(
                       onTap: () {
-                        LaunchReview.launch(iOSAppId: "6738093125");
+                        final InAppReview inAppReview = InAppReview.instance;
+                        inAppReview.openStoreListing(
+                          appStoreId: '6738093125',
+                        );
                       },
                       child: Text(
                         "Rate Us",
