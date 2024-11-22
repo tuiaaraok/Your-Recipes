@@ -8,7 +8,7 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.BrewWisdom.WV67Applicatio # bundle
+        bundle_identifier: com.BrewWisdom.WV67Application # bundle
       vars:
         APP_ID:  6738093125 # APP ID here
       flutter: stable
